@@ -1,0 +1,16 @@
+{
+    "name": "todo-websocket",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1",
+        "nodemon": "^2.0.19",
+        "socket.io": "^2.2.0"
+    }
+}
