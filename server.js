@@ -16,7 +16,7 @@ const io = socket(server);
 
 io.on('connection', (socket) => {
     console.log('Client connected with ID:', socket.id);
-    socket.broadcast.emit('updateData', tasks);
+    socket.emit('updateData', tasks);
     socket.on('addTask', (task) => {
         console.log('Task added');
         tasks.push(task);
